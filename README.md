@@ -1,12 +1,13 @@
 # SP-PDS
-Code for  separate preconditioned primal-dual splitting algorithm on image denoising and LASSO problems
+Code for a separate preconditioned primal-dual splitting algorithm 
 
 
-Xiaokai Chang. School of Science, Lanzhou University of Technology, Lanzhou, Gansu, P. R. China.  xkchang@lut.edu.cn
+Xiaokai Chang. School of Science, Lanzhou University of Technology, Lanzhou, Gansu, P. R. China.  
+Email: xkchang@lut.edu.cn
 
 
-By incorporating a linear constraint and solving the resulting linear subproblems, a separate preconditioned PDS algorithm is proposed, where the preconditioning strategy is separate from proximal operator evaluation, thus avoiding computation of complex preconditioned proximal op- erators. Only a few inner iterations are required to approximate the solutions of linear subproblems or the closed-form solution can be used for the matrix inversion problem without error control. Furthermore, the proposed preconditioning strategy is extended to alternating direction method of multipliers for solving more general linear constraint optimization.
+We propose a separable preconditioned primal dual splitting (SP-PDS) method for solving composite monotone inclusion problems. The linear subproblem arising in this method can be approximately solved. 
 
-By different measures under inclusion and optimization frameworks, global iterative convergence and ergodic convergence rate results are established under any positive constant step size, so the proposed algorithm is step-free. 
+We prove weak convergence in Hilbert space by reformulating the proposed SP-PDS as a decomposed proximal point algorithm, where the preconditioner is decomposed non-symmetrically. In particular, various efficient preconditioners are introduced in this framework for which only a few inner iterations are needed to solve the subproblem, instead of computing an exact solution or controlling the error. 
 
-Finally, the performance of PDS with separate preconditioning strategy is verified through preliminary numerical experiments.
+The performance of separate preconditioning strategy is verified through preliminary numerical experiment results on the image denoising and LASSO problems.
